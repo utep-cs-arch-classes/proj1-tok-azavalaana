@@ -26,11 +26,11 @@ char* copy_str(char* inStr, short len){
 
 int main()
 {
-    int loop = 1;
+    //int loop = 1;
     
-    while (loop == 1) {
+    //while (loop == 1) {
         char* test = input();
         int len = string_length(test);
         printf("Copy: %s\n ", copy_str(test, len));
-    }
+    //}
 }
