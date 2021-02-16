@@ -19,14 +19,17 @@ int non_space_char(char c){
   return 1;
 }
 
-/* Returns a pointer to the first character of the next space-separated word in zero-terminated str. */
+/* Returns a pointer to the first character of the next space-separated word in zero-terminated st*/
 char* word_start(char* str){
+  if (count_words(str) > 0){
     int i = 0;
     
     while (space_char(str[i])) {
         i++;
     }
     return (str + i);
+  }
+  return str;
 }
 
 /* Returns a pointer to the first space character in zero-terminated str. */
